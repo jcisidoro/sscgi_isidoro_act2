@@ -1,3 +1,9 @@
+* {
+    font-family: 'Bebas Neue', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .chokokutai-regular {
     font-family: "Chokokutai", serif;
     font-weight: 400;
@@ -7,3 +13,13 @@
 li {
     list-style: none;
 }
+
+.anchor-deco {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.anchor-deco:hover, .anchor-deco:focus {
+    color: #898989;
+  }
+  
