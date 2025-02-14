@@ -32,10 +32,29 @@
 
         <div class="w-full h-24 bg-[#040404]" id="about"></div>
 
-        <div class="flex w-full h-96 bg-green-100">
-            <img src="/images/designImg.jpg" alt="Design Image Logo" class="w-1/2 object-cover">
-            <img src="/images/devImg.jpg" alt="Dev Image Logo" class="w-1/2 object-cover">
+        <div class="flex w-full h-96 bg-black relative">
+            <div class="flex flex-col items-center absolute left-1/2 transform -translate-x-1/2 z-10 mt-4 text-white font-bold">
+                <span class="text-[#898989] bebas-neue-regular text-lg">Things I do</span>
+                <span class="text-white leading-6 text-4xl bebas-neue-regular">Capabilities</span>
+            </div>
+            
+            <div class="relative w-1/2 flex justify-center">
+                <img src="/images/designImg.jpg" alt="Design Image Logo" class="w-full h-full object-cover opacity-60">
+                <div class="flex flex-col absolute bottom-10 items-center">
+                    <span class="text-4xl text-white bebas-neue-regular">Dev</span>
+                    <span class="text-lg text-[#898989] bebas-neue-regular">Front-End/HTML/CSS/Next.js</span>
+                </div>
+            </div>
+            <div class="relative w-1/2 flex justify-center">
+                <img src="/images/devImg.jpg" alt="Dev Image Logo" class="w-full h-full object-cover opacity-60">
+                <div class="flex flex-col absolute bottom-10 items-center">
+                    <span class="text-4xl text-white bebas-neue-regular">Design</span>
+                    <span class="text-lg text-[#898989] bebas-neue-regular">UI/UX</span>
+                </div>
+            </div>
+           
         </div>
+        
 
         <div class="w-full h-[600px] bg-white flex flex-col items-center justify-center">
             <div class="flex flex-col w-[1000px] h-3/5 justify-center">
@@ -94,7 +113,33 @@
             </div>
         </div>
 
-        <div class="flex w-full bg-white h-96" id="contact"></div>
+        <div class="flex flex-col w-full bg-white h-[600px] justify-center items-center" id="contact">
+            <div class="w-[800px]">
+                <h2 class="bebas-neue-regular">Email Me</h2>
+                <span class="flex mb-4 text-lg">Hey there! If you need any help or have any questions, feel free to reach out. I'm here and happy to assist you with anything you might need!</span>
+                <form>
+                    <div class="flex mb-3 gap-4">
+                        <div class="flex flex-col w-full">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@example.com" required>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Juan Dela Cruz" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary bebas-neue-regular">Submit</button>
+                </form>
+            </div>
+        </div>        
 
         <footer class="relative w-full h-24 bg-[#040404] flex flex-col justify-center">
             <div class="w-full h-full"></div>
