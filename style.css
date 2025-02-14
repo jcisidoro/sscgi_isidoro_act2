@@ -22,4 +22,19 @@ li {
 .anchor-deco:hover, .anchor-deco:focus {
     color: #898989;
   }
+
+  /* Custom button class */
+.card .btn-custom {
+  background-color: #898989; /* Custom background color (gray) */
+  color: white; /* White text color */
+  border: none; /* Remove the border */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for color change */
+}
+
+.card .btn-custom:hover {
+  background-color: #545454; /* gray for hover */
+  color: white; /* Keep text white */
+  transform: scale(1.05); /* Slightly scale up the button */
+}
+
   

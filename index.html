@@ -12,8 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chokokutai&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 <body>
-    <main class="flex flex-col w-full h-full bg-red-100">
-        <nav class="flex bg-[#252525] h-10">
+    <main class="flex flex-col w-full h-full bg-[#252525]">
+        <nav class="flex bg-[#040404] h-14">
             <div class="relative flex w-full h-full">
               <div class="h-full flex items-center">
                 <span class="p-2 chokokutai-regular text-white ml-4">JPI</span>
@@ -65,17 +65,25 @@
                 </div>
             </div>
         </div>
-        <div class="w-full h-full bg-green-100" id="projects">
-            <div class="card" style="width: 18rem;">
+        <div class="flex justify-center items-center h-[700px] gap-4" id="projects">
+            <div class="card" style="width: 40rem; height: 35rem;">
                 <img src="/images/cmemboApp0.png" class="card-img-top" alt="Cmembo App Logo">
-                <div class="card-body">
-                  <h5 class="card-title">Cmembo - Document Management System</h5>
+                <div class="relative card-body">
+                  <h5 class="card-title bebas-neue-regular">Cmembo - Document Management System</h5>
                   <p class="card-text">This application designed specifically for the barangay's admin to efficiently manage and organize appointments. Admins can schedule and monitor document processing times, ensuring smoother operations and reducing wait times for residents.</p>
-                  <a href="https://queueby.vercel.app/" target="_blank" class="btn btn-primary">View App</a>
+                  <a href="https://queueby.vercel.app/" target="_blank" class="btn absolute bottom-4 btn-custom">View App</a>
                 </div>
-              </div>
+            </div>
+            <div class="card" style="width: 40rem; height: 35rem;">
+                <img src="/images/todoListApp0.png" class="card-img-top" alt="TodoList App Logo">
+                <div class="relative card-body">
+                  <h5 class="card-title bebas-neue-regular">TodoList - Task Management System</h5>
+                  <p class="card-text">This application boosts productivity by helping users prioritize tasks, stay organized, and achieve their goals efficiently.</p>
+                  <a href="https://todolist-tms.vercel.app/" target="_blank" class="btn absolute bottom-4 btn-custom">View App</a>
+                </div>
+            </div>
         </div>
-        <footer class="relative w-full h-24 bg-[#252525] flex flex-col justify-center" id="contact">
+        <footer class="relative w-full h-24 bg-[#040404] flex flex-col justify-center" id="contact">
             <div class="w-full h-full"></div>
             <div class="flex w-full h-6 justify-center items-center text-xs text-white bebas-neue-regular">&copy; 2025 - John Patrick</div>
             <div class="absolute right-10">
